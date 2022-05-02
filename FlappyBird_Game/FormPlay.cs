@@ -59,7 +59,7 @@ namespace FlappyBird_Game
 
             if (this.score == 0)
             {
-                this.myImage = new Bitmap(Properties.Resources.tuyetroi);
+                this.myImage = new Bitmap(Properties.Resources.Trời_tối);
                 ptbBackGround.Image = (Image)myImage;
             }
             else if (this.score == 10)
@@ -205,6 +205,7 @@ namespace FlappyBird_Game
             ptbPipeBottom3.Location = new Point(1046, 378);
 
             timerGame.Enabled = true;
+            this.y = gravity;
             this.checkRestart = false;
             this.checkEndGame = false;
             this.checkBestScore = false;

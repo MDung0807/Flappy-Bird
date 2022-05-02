@@ -173,5 +173,8 @@
   <ItemGroup>
     <None Include="Resources\tuyetroi2.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trời tối.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
