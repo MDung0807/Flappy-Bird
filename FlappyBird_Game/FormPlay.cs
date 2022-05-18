@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
+
 
 namespace FlappyBird_Game
 {
@@ -26,7 +22,6 @@ namespace FlappyBird_Game
         public int pipeSpeed { get; set; }
 
 
-        Bitmap myImage;
         public FormPlay()
         {
             InitializeComponent();
@@ -52,22 +47,28 @@ namespace FlappyBird_Game
         {
             this.checkEndGame = check;
         }
-       
+
+        private void DieSound()
+        {
+            WindowsMediaPlayer wplayer = new WindowsMediaPlayer();
+            wplayer.URL = @"D:\Dowload\hit.mp3";
+            wplayer.controls.play();
+        }
+        private void PointSound()
+        {
+            WindowsMediaPlayer wplayer = new WindowsMediaPlayer();
+            wplayer.URL = @"D:\Dowload\point.mp3";
+            wplayer.controls.play();
+        }
+        private void WingSound()
+        {
+            WindowsMediaPlayer wplayer = new WindowsMediaPlayer();
+            wplayer.URL = @"D:\Dowload\wing.mp3";
+            wplayer.controls.play();
+        }
 
         private void timerGame_Tick(object sender, EventArgs e)
         {
-
-            if (this.score == 0)
-            {
-                this.myImage = new Bitmap(Properties.Resources.Trời_tối);
-                ptbBackGround.Image = (Image)myImage;
-            }
-            else if (this.score == 10)
-            {
-                this.myImage = new Bitmap(Properties.Resources.tuyetroi2);
-                ptbBackGround.Image = (Image)myImage;
-            }
-
 
             ptbBird.Top += y;
             ptbPipeTop.Left -= pipeSpeed;
@@ -79,7 +80,8 @@ namespace FlappyBird_Game
 
             lblScore.Text = "Score: " + this.score;
 
-            if(ptbPipeTop.Left < -50)
+
+            if (ptbPipeTop.Left < -50)
             {
                 ptbPipeTop.Left = 600;
                 ptbPipeBottom.Left = 600;
@@ -87,6 +89,8 @@ namespace FlappyBird_Game
                 int height = rd.Next(150, 200);
                 ptbPipeTop.Size = new Size(100, height);
                 ptbPipeBottom.Size = new Size(100, height);
+                ptbPipeBottom.SizeMode = PictureBoxSizeMode.StretchImage;
+                PointSound();
                 this.score++;
             }
 
@@ -98,6 +102,8 @@ namespace FlappyBird_Game
                 int height = rd.Next(150, 200);
                 ptbPipeTop2.Size = new Size(100, height);
                 ptbPipeBottom2.Size = new Size(100, height + 50);
+                ptbPipeBottom2.SizeMode = PictureBoxSizeMode.StretchImage;
+                PointSound();
                 this.score++;
             }
 
@@ -109,6 +115,8 @@ namespace FlappyBird_Game
                 int height = rd.Next(150, 200);
                 ptbPipeTop3.Size = new Size(100, height);
                 ptbPipeBottom3.Size = new Size(100, height + 100);
+                ptbPipeBottom3.SizeMode = PictureBoxSizeMode.StretchImage;
+                PointSound();
                 this.score++;
             }
 
@@ -139,11 +147,6 @@ namespace FlappyBird_Game
         private void formFlappyBird_KeyDown(object sender, KeyEventArgs e)
         {
 
-            //if (e.KeyCode == Keys.Space)
-            //{
-            //    this.gravity = -10;
-            //}
-
              if (checkEndGame == false)
             {
                 if (e.KeyCode == Keys.Space)
@@ -163,6 +166,7 @@ namespace FlappyBird_Game
                 {
                     if (this.checkPause == false)
                     {
+                        WingSound();
                         this.y = -gravity;
                     }
                 }
@@ -181,6 +185,7 @@ namespace FlappyBird_Game
         {
             if(this.checkEndGame != true)
             {
+                DieSound();
                 timerGame.Stop();
                 FormGameOver form = new FormGameOver(this);
                 form.ShowDialog();
@@ -199,10 +204,10 @@ namespace FlappyBird_Game
             ptbPipeBottom.Location = new Point(628, 340);
 
             ptbPipeTop2.Location = new Point(854, -7);
-            ptbPipeBottom2.Location = new Point(854, 408);
+            ptbPipeBottom2.Location = new Point(854, 328);
 
             ptbPipeTop3.Location = new Point(1046, -7);
-            ptbPipeBottom3.Location = new Point(1046, 378);
+            ptbPipeBottom3.Location = new Point(1046, 290);
 
             timerGame.Enabled = true;
             this.y = gravity;
