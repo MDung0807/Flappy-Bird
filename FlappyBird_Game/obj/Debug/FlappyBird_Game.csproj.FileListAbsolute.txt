@@ -56,3 +56,5 @@ D:\ChuongTrinhHoc\LapTrinhTrenWindow\Game\Flappy-Bird\FlappyBird_Game\obj\Debug\
 D:\ChuongTrinhHoc\LapTrinhTrenWindow\Game\Flappy-Bird\FlappyBird_Game\obj\Debug\FlappyBird_Game.pdb
 D:\ChuongTrinhHoc\LapTrinhTrenWindow\Game\Flappy-Bird\FlappyBird_Game\obj\Debug\Interop.WMPLib.dll
 D:\ChuongTrinhHoc\LapTrinhTrenWindow\Game\Flappy-Bird\FlappyBird_Game\obj\Debug\FlappyBird_Game.csproj.ResolveComReference.cache
+D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\Flappy-Bird\FlappyBird_Game\obj\Debug\FlappyBird_Game.csproj.ResolveComReference.cache
+D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\Flappy-Bird\FlappyBird_Game\obj\Debug\FlappyBird_Game.csproj.SuggestedBindingRedirects.cache

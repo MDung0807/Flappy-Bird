@@ -19,10 +19,10 @@ namespace FlappyBird_Game.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace FlappyBird_Game.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FlappyBird_Game.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace FlappyBird_Game.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap begin {
+        public static System.Drawing.Bitmap begin {
             get {
                 object obj = ResourceManager.GetObject("begin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap begin2 {
+        public static System.Drawing.Bitmap begin2 {
             get {
                 object obj = ResourceManager.GetObject("begin2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bgcolor {
+        public static System.Drawing.Bitmap bgcolor {
             get {
                 object obj = ResourceManager.GetObject("bgcolor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bird {
+        public static System.Drawing.Bitmap bird {
             get {
                 object obj = ResourceManager.GetObject("bird", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bird2 {
+        public static System.Drawing.Bitmap bird2 {
             get {
                 object obj = ResourceManager.GetObject("bird2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bird3 {
+        public static System.Drawing.Bitmap bird3 {
             get {
                 object obj = ResourceManager.GetObject("bird3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bird4 {
+        public static System.Drawing.Bitmap bird4 {
             get {
                 object obj = ResourceManager.GetObject("bird4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bird5 {
+        public static System.Drawing.Bitmap bird5 {
             get {
                 object obj = ResourceManager.GetObject("bird5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bird6 {
+        public static System.Drawing.Bitmap bird6 {
             get {
                 object obj = ResourceManager.GetObject("bird6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Colorrr {
+        public static System.Drawing.Bitmap Colorrr {
             get {
                 object obj = ResourceManager.GetObject("Colorrr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap gameover {
+        public static System.Drawing.Bitmap gameover {
             get {
                 object obj = ResourceManager.GetObject("gameover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap gameover___Color {
+        public static System.Drawing.Bitmap gameover___Color {
             get {
                 object obj = ResourceManager.GetObject("gameover - Color", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap gameover___Copy {
+        public static System.Drawing.Bitmap gameover___Copy {
             get {
                 object obj = ResourceManager.GetObject("gameover - Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -191,9 +191,18 @@ namespace FlappyBird_Game.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream gameover1 {
+            get {
+                return ResourceManager.GetStream("gameover1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ground {
+        public static System.Drawing.Bitmap ground {
             get {
                 object obj = ResourceManager.GetObject("ground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +212,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nen {
+        public static System.Drawing.Bitmap nen {
             get {
                 object obj = ResourceManager.GetObject("nen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +222,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pipe {
+        public static System.Drawing.Bitmap pipe {
             get {
                 object obj = ResourceManager.GetObject("pipe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +232,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pipedown {
+        public static System.Drawing.Bitmap pipedown {
             get {
                 object obj = ResourceManager.GetObject("pipedown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -231,9 +240,18 @@ namespace FlappyBird_Game.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream punto {
+            get {
+                return ResourceManager.GetStream("punto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Trời_tối {
+        public static System.Drawing.Bitmap Trời_tối {
             get {
                 object obj = ResourceManager.GetObject("Trời tối", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +261,7 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tuyetroi {
+        public static System.Drawing.Bitmap tuyetroi {
             get {
                 object obj = ResourceManager.GetObject("tuyetroi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,10 +271,19 @@ namespace FlappyBird_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tuyetroi2 {
+        public static System.Drawing.Bitmap tuyetroi2 {
             get {
                 object obj = ResourceManager.GetObject("tuyetroi2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream volo {
+            get {
+                return ResourceManager.GetStream("volo", resourceCulture);
             }
         }
     }
