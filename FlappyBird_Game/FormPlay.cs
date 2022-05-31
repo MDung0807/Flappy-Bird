@@ -52,25 +52,14 @@ namespace FlappyBird_Game
         {
             SoundPlayer a = new SoundPlayer(Properties.Resources.gameover1);
             a.Play();
-            ////WindowsMediaPlayer wplayer = new WindowsMediaPlayer();
-            ////wplayer.URL = @"D:\Dowload\hit.mp3";
-            ////wplayer.controls.play();
         }
         private void PointSound()
         {
             SoundPlayer a = new SoundPlayer(Properties.Resources.volo);
             a.Play();
-            //////WindowsMediaPlayer wplayer = new WindowsMediaPlayer();
-            ////wplayer.URL = @"D:\Dowload\point.mp3";
-            ////wplayer.controls.play();
         }
         private void WingSound()
         {
-            //SoundPlayer a = new SoundPlayer(Properties.Resources.punto);
-            //a.Play();
-            ////WindowsMediaPlayer wplayer = new WindowsMediaPlayer();
-            ////wplayer.URL = @"D:\Dowload\wing.mp3";
-            ////wplayer.controls.play();
         }
 
         private void timerGame_Tick(object sender, EventArgs e)
